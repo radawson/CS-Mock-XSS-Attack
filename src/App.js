@@ -18,6 +18,7 @@ const App = () => {
     text: "",
     image: ""
   });
+  console.log(process.env.BOB)
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -36,7 +37,7 @@ const App = () => {
 
   return (
     <>
-      <div class="box-main">
+      <div className="box-main">
         <form onSubmit={handleSubmit}>
           <label>
             What do you need to get done?
@@ -62,17 +63,16 @@ const App = () => {
         </form>
       </div>
       <>
-        <div class="box-main">
-          <h2>Tasks on your list:</h2>
 
-          {tasks.map((task, index) => (
-            <Task
-              text={task.text}
-              image={task.image}
-              index={index}
-            />
-          ))}
-        </div>
+        <h2>Tasks on your list:</h2>
+
+        {tasks.map((task, index) => (
+          <Task
+            text={task.text}
+            image={task.image}
+            index={index}
+          />
+        ))}
       </>
       {/* Launch second attack here. */}
     </>
