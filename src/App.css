@@ -1,3 +1,8 @@
+* {
+  margin: 10;
+  padding: 10;
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +31,16 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  max-width: 80%;
+  margin: auto;
+  height: 80%;
 }
 
 @keyframes App-logo-spin {
